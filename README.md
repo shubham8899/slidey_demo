@@ -32,6 +32,6 @@ st.image("...slidey_demo/exports/charts/temp_chart.png", caption=None, width=Non
 
 ### 3. Run the Streamlit Application for Demo
 ```bash
-streamlit app run.py
+streamlit run app.py
 ```
 
