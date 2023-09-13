@@ -18,8 +18,13 @@ pip install -r requirements.txt
 ```
 
 
-### 2. Update the Image Path in `app.py`
+### 2. Add OpenAI API Key, Update the Image Path in `app.py`
 In the `app.py` file, make sure to update the path to the temporary image location within your local directory. Find and modify line 25 as follows:
+
+```Python
+llm = OpenAI(api_token="UPDATE_API_KEY_HERE", enable_cache=False)
+```
+
 ```Python
 st.image("...slidey_demo/exports/charts/temp_chart.png", caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 ```
