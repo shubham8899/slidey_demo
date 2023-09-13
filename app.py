@@ -4,7 +4,7 @@ from pandasai import SmartDataframe
 from io import StringIO
 from pandasai.llm import OpenAI
 
-llm = OpenAI(api_token="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", enable_cache=False)
+llm = OpenAI(api_token="UPDATE_API_KEY_HERE", enable_cache=False)
 
 uploaded_file = st.file_uploader("Upload a CSV for Natural Language Data Analysis and Visualization", type='csv')
 if uploaded_file is not None:
